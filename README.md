@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Bucket List Tracker 🚀
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and powerful full-stack web application that lets users create, manage, and track their personal bucket list items — securely stored in the cloud.
 
-## Available Scripts
+This project is built using **React** for the frontend and **AWS Amplify** for authentication, backend, and hosting.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## 🌟 What this app does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+With this app, users can:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Sign up and log in securely  
+- Add new bucket list goals  
+- View their saved goals anytime  
+- Delete goals when completed  
+- Access their data from anywhere  
+- Keep their data private and secure  
 
-### `npm test`
+Each user can only see **their own bucket list**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠 Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Frontend
+- React.js
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Backend & Cloud
+- AWS Amplify  
+- Amazon Cognito (Authentication)  
+- AWS AppSync (GraphQL API)  
+- DynamoDB (Database)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Hosting
+- AWS Amplify Hosting
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔐 Key Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Secure login & signup system  
+- Cloud-based data storage  
+- GraphQL API for fast communication  
+- Per-user data isolation  
+- Fully deployed production app  
+- Clean and beginner-friendly UI  
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌍 Live Demo
 
-## Learn More
+👉 **Live App:**  
+https://dev.d1a6n8mgw6lupw.amplifyapp.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ How the project works (simple explanation)
 
-### Code Splitting
+1. User signs up or logs in using AWS Cognito  
+2. React frontend sends requests to AWS AppSync  
+3. AppSync talks to DynamoDB to store/retrieve data  
+4. Amplify handles authentication, API, and hosting  
+5. User sees their updated bucket list instantly  
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🧑‍💻 Getting Started (for developers)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+If you want to run this project locally:
 
-### Making a Progressive Web App
+### 1. Clone the repository
+```bash
+git clone https://github.com/dubarikalita/bucket-list-tracker.git
+cd bucket-list-tracker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Project Structure
+bucket-list-app/
+│
+├── amplify/           # AWS Amplify backend configuration
+├── src/
+│   ├── graphql/       # Auto-generated GraphQL queries & mutations
+│   ├── App.js         # Main app logic
+│   ├── index.js       # App entry point
+│
+├── package.json
+└── README.md
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
