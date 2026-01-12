@@ -1,8 +1,8 @@
 # Bucket List Tracker 🚀
 
-A simple and powerful full-stack web application that lets users create, manage, and track their personal bucket list items — securely stored in the cloud.
+A full-stack web application that helps users create, manage, and track their personal bucket list items — securely stored in the cloud.
 
-This project is built using **React** for the frontend and **AWS Amplify** for authentication, backend, and hosting.
+This project uses **React** for the frontend and **AWS Amplify** for authentication, backend services, and hosting.
 
 ---
 
@@ -17,7 +17,7 @@ With this app, users can:
 - Access their data from anywhere  
 - Keep their data private and secure  
 
-Each user can only see **their own bucket list**.
+Each user can only see **their own bucket list items**.
 
 ---
 
@@ -59,8 +59,8 @@ https://dev.d1a6n8mgw6lupw.amplifyapp.com
 
 1. User signs up or logs in using AWS Cognito  
 2. React frontend sends requests to AWS AppSync  
-3. AppSync talks to DynamoDB to store/retrieve data  
-4. Amplify handles authentication, API, and hosting  
+3. AppSync communicates with DynamoDB  
+4. AWS Amplify manages authentication, API, and hosting  
 5. User sees their updated bucket list instantly  
 
 ---
@@ -73,16 +73,4 @@ If you want to run this project locally:
 ```bash
 git clone https://github.com/dubarikalita/bucket-list-tracker.git
 cd bucket-list-tracker
-
-### Project Structure
-bucket-list-app/
-│
-├── amplify/           # AWS Amplify backend configuration
-├── src/
-│   ├── graphql/       # Auto-generated GraphQL queries & mutations
-│   ├── App.js         # Main app logic
-│   ├── index.js       # App entry point
-│
-├── package.json
-└── README.md
 
