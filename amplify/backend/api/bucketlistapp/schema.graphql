@@ -1,0 +1,10 @@
+type BucketItem
+  @model
+  @auth(rules: [
+    { allow: owner },
+    { allow: private, provider: userPools }
+  ]) {
+  id: ID!
+  title: String!
+  completed: Boolean!
+}
